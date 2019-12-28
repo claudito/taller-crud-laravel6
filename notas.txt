@@ -1,0 +1,12 @@
+CRUD:Expendientes
+
+Tabla:expedientes(plural)
+
+Modelo:app/Expediente
+
+Controlador:app/Http/Controllers/ExpedienteController
+
+Vista:resources/views/expediente/index.blade.php
+
+Ruta:routes/web.php
+
