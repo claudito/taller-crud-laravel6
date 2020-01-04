@@ -21,3 +21,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('atencion','AtencionController')->middleware(['auth']);
+
+
+Route::get('expediente/get_atencion','ExpedienteController@get_atencion')->name('expediente.get_atencion');
+Route::get('expediente/get_trabajador','ExpedienteController@get_trabajador')->name('expediente.get_trabajador');
+
+Route::resource('expediente','ExpedienteController')->middleware(['auth']);
+
+Route::resource('auditoria','AuditoriaController')->middleware(['auth']);
+
+
+
+
+
+
+
+

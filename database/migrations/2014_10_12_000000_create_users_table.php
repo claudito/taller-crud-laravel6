@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('organojuris',30)->nullable();
             $table->string('especialidad',20)->nullable();
             $table->string('tipo',20)->nullable()->nullable();
-            $table->enum('bandera',['S','N'])->default('N');
+            $table->enum('bandera',['S','N'])->default('S');
             $table->rememberToken();
             $table->timestamps();
         });
